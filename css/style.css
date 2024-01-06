@@ -13,8 +13,11 @@
 
 -font weight :
 
--line height : 1
+-line height : 
 
+1 (default)
+1.05
+1.6
 
 -----#2 colors
 -PRimary : #e67e22
@@ -51,6 +54,10 @@ body {
   color: #555;
 }
 
+/* ----------------------------------------------------- */
+/* header section  */
+/* ----------------------------------------------- */
+
 .logo {
   height: 2.4rem;
 }
@@ -62,19 +69,55 @@ body {
   height: 6.4rem;
   padding: 0 9.6rem;
 }
-
+/* 
 .main-nav {
-}
+} */
 .main-nav-list {
   list-style: none;
   display: flex;
   gap: 3.2rem;
 }
 
-.main-nav-link {
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #cf711f;
 }
 
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #cf711f;
+}
+
+.main-nav-link {
+  text-decoration: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+/* ---------------------------------------- */
+
 /* 1 rem = 16px font size     */
+
+/* --------------------------------------------- */
 
 /* hero section  */
 
@@ -178,4 +221,36 @@ body {
 .delivered-par span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* -------------------------------------- */
+
+/* ------------------------------------------ */
+
+/* how it work section  */
+
+.section-how {
+  padding: 9.6rem;
+  background-color: orangered;
+}
+
+.section-how div {
+  padding: 100px;
+  font-size: 50px;
+}
+
+.section-how div:nth-child(1) {
+  background-color: aqua;
+}
+.section-how div:nth-child(2) {
+  background-color: violet;
+}
+.section-how div:nth-child(3) {
+  background-color: lime;
+}
+.section-how div:nth-child(4) {
+  background-color: red;
+}
+.section-how div:nth-child(5) {
+  background-color: brown;
 }
